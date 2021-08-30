@@ -1,0 +1,87 @@
+body {
+	background-color: #001f3f;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #2ecc40;
+}
+
+#header {
+	font-size: xx-large;
+	text-align: center;
+	font-style: italic;
+}
+
+#header > h1 {
+	margin-bottom: 0;
+	animation-duration: 1s;
+	animation-name: glowing;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#header > hr {
+	border: none;
+	color: #2ecc40;
+	background-color: #2ecc40;
+	height: 2px;
+}
+
+@keyframes glowing {
+	from {
+		text-shadow: #2ecc40 0px 0px 5px;
+	}
+
+	to {
+		text-shadow: #2ecc40 0px 0px 7px;
+	}
+}
+
+#main {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+#main > p {
+	margin-bottom: 2px;
+}
+
+#symptom {
+	background-color: #001f3f;
+	color: #2ecc40;
+	border-color: #2ecc40;
+	border-radius: 5px;
+	border-style: solid;
+	font-size: 20px;
+}
+
+#submit {
+	border-radius: 5px;
+	border-style: solid;
+	border-color: #2ecc40;
+	color: #2ecc40;
+	background-color: #001f3f;
+	font-size: 20px;
+}
+
+#submit:hover:not(:active) {
+	box-shadow: 0px 0px 10px #2ecc40;
+	text-shadow: #2ecc40 0px 0px 5px;
+}
+
+#submit:active {
+	color: aqua;
+	border-color: aqua;
+	box-shadow: 0px 0px 10px aqua;
+	text-shadow: aqua 0px 0px 5px;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+	font-size: small;
+}
+
